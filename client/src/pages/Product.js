@@ -16,8 +16,9 @@ class Product extends React.Component {
   }
 
   getMongoProducts = () => {
+    const url = "/products";
     axios
-      .get("http://localhost:5000/products")
+      .get(url)
       .then(res => {
         console.log(res.data);
         this.setState({ products: res.data });
@@ -27,34 +28,20 @@ class Product extends React.Component {
       });
   };
 
-  // getProducts = () => {
-  //   const url = "http://localhost:5000/api/products";
-  //   fetch(url)
-  //     .then(response => {
-  //       return response.json();
-  //     })
-  //     .then(data => {
-  //       this.setState({ products: data });
-  //     })
-  //     .catch(error => {
-  //       console.log("BAD", error);
-  //     });
-  // };
-
   // filter function by category
-  // getSelectedProducts = e => {
-  //   const url = "http://localhost:5000/api/productfilter/" + e.target.value;
-  //   fetch(url)
-  //     .then(response => {
-  //       return response.json();
-  //     })
-  //     .then(data => {
-  //       this.setState({ products: data });
-  //     })
-  //     .catch(error => {
-  //       console.log("BAD", error);
-  //     });
-  // };
+  getSelectedProducts = e => {
+    const url = "/productfilter" + e.target.value;
+    fetch(url)
+      .then(response => {
+        return response.json();
+      })
+      .then(data => {
+        this.setState({ products: data });
+      })
+      .catch(error => {
+        console.log("BAD", error);
+      });
+  };
 
   // filter function by prices
   // getSelectedPrices = (low, high) => {

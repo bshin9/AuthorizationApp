@@ -13,10 +13,10 @@ class CommentBox extends React.Component {
 
   // We want to map through the contacts using state just like how we did the products
   getMongoContacts = () => {
+    const url = "/contacts";
     axios
-      .get("http://localhost:5000/contacts")
+      .get(url)
       .then(res => {
-        console.log("does it work");
         console.log(res.data);
         this.setState({ contacts: res.data });
       })
