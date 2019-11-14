@@ -44,7 +44,7 @@ section .container {
 
 @media screen and (max-width: 1200px) {
   .vidContainer {
-    background-image: url("https://images.unsplash.com/photo-1486215397028-cb4f31efea3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80");
+    background-image: url("https://cdn.vox-cdn.com/thumbor/NEjSX05ZknRakzfP6tNEeCEtQkQ=/0x0:1920x1236/1820x1213/filters:focal(807x465:1113x771):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61748265/004_Floyd_Mayweather_vs_Conor_McGregor.0.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -200px;

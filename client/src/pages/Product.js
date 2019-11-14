@@ -28,20 +28,33 @@ class Product extends React.Component {
       });
   };
 
-  // filter function by category
+  // filtering the products by category
   getSelectedProducts = e => {
     const url = "/productfilter" + e.target.value;
-    fetch(url)
-      .then(response => {
-        return response.json();
+    axios
+      .get(url)
+      .then(res => {
+        console.log(res.data);
+        this.setState({ products: res.data });
       })
-      .then(data => {
-        this.setState({ products: data });
-      })
-      .catch(error => {
-        console.log("BAD", error);
+      .catch(err => {
+        console.log("failed--", err);
       });
   };
+  // filter function by category
+  // getSelectedProducts = e => {
+  //   const url = "/productfilter" + e.target.value;
+  //   fetch(url)
+  //     .then(response => {
+  //       return response.json();
+  //     })
+  //     .then(data => {
+  //       this.setState({ products: data });
+  //     })
+  //     .catch(error => {
+  //       console.log("BAD", error);
+  //     });
+  // };
 
   // filter function by prices
   // getSelectedPrices = (low, high) => {
@@ -77,7 +90,7 @@ class Product extends React.Component {
             </div>
             {/* Filter */}
             <div id="myBtnContainer">
-              <button className="filterBtn" onClick={this.getProducts}>
+              <button className="filterBtn" onClick={this.getMongoProducts}>
                 Show all
               </button>
               <button
@@ -117,7 +130,7 @@ class Product extends React.Component {
               </button>
             </div>
             <div id="myfilterBtnContainer">
-              <button className="filterBtn" onClick={this.getProducts}>
+              <button className="filterBtn" onClick={this.getMongoProducts}>
                 All Prices
               </button>
               <button
