@@ -220,7 +220,6 @@ class Contact extends React.Component {
                         <textarea
                           className="form-control"
                           placeholder="Message"
-                          defaultValue={""}
                           id="message"
                           value={this.state.message}
                           onChange={this.updateMessage}

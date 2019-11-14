@@ -163,9 +163,9 @@ class Product extends React.Component {
                 each variable here retrieves specific information from the Card */}
             <div className="flex-items">
               {this.state.products &&
-                this.state.products.map(product => (
+                this.state.products.map((product, index) => (
                   <Card
-                    key={product.index}
+                    key={index}
                     name={product.name}
                     price={product.price}
                     description={product.description}

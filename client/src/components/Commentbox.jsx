@@ -29,8 +29,9 @@ class CommentBox extends React.Component {
       <div className="contactWrapper">
         <div className="getContact">
           {this.state.contacts &&
-            this.state.contacts.map(contacts => (
+            this.state.contacts.map((contacts, index) => (
               <EditComment
+                key={index}
                 contact_id={contacts.contact_id}
                 user_name={contacts.user_name}
                 message={contacts.message}
