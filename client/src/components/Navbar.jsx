@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 
 // Created a separate Navbar component
 // Using NavLink to route within my app freely
-const Navbar = () => {
+const Navbar = props => {
   return (
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
       <div className="container">
-        <NavLink className="navbar-brand" to="/">
+        <NavLink className="navbar-brand" to="/home">
           Proper Watch
         </NavLink>
         <button
@@ -20,10 +20,11 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active"> </li>
-            <li className="nav-item"> </li>
-            <NavLink className="nav-link" to="/home">
-              HOME
-            </NavLink>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/home">
+                HOME
+              </NavLink>
+            </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/products">
                 PRODUCTS
@@ -34,6 +35,33 @@ const Navbar = () => {
                 CONTACTS
               </NavLink>
             </li>
+            {props.currentUser ? (
+              <span>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/profile">
+                    Profile
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/logout">
+                    Log Out
+                  </NavLink>
+                </li>
+              </span>
+            ) : (
+              <span>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/login">
+                    Log In
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/signup">
+                    Sign Up
+                  </NavLink>
+                </li>
+              </span>
+            )}
           </ul>
         </div>
       </div>

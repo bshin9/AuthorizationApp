@@ -1,0 +1,42 @@
+#signUpBg {
+  background-image: url("/img/boxing.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 300px;
+  padding-bottom: 200px;
+  filter: brightness(0.6);
+}
+
+.note {
+  text-align: center;
+  height: 80px;
+  background: -webkit-linear-gradient(left, #009a49, #ff7900);
+  color: #fff;
+  font-weight: bold;
+  line-height: 80px;
+}
+.form-content {
+  padding: 5%;
+  border: 1px solid #ced4da;
+  margin-bottom: 2%;
+}
+.form-control {
+  border-radius: 1.5rem;
+}
+.btnSubmit {
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+  color: #40c575;
+  border-color: #40c575;
+}
+.btnSubmit:hover {
+  background-color: #40c575;
+  color: #fff;
+}
+
+.card {
+  margin: 2rem 0 2rem 0;
+  padding: 0 0 4rem 0;
+}

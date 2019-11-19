@@ -3,7 +3,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
 const cors = require("cors");
-
+const morgan = require('morgan')
 const app = express();
 const port = process.env.PORT || 5000;
 let uri = "";
@@ -12,7 +12,7 @@ let uri = "";
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
-
+app.use(morgan('dev'))
 // Serve up static assets (heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
@@ -35,9 +35,11 @@ connection.once("open", () => {
 // register api catalogue
 const products = require("./routes/products");
 const contacts = require("./routes/contacts");
+const users = require("./routes/usersRouter");
 
 app.use("/products", products);
 app.use("/contacts", contacts);
+app.use("/users", users);
 
 // Creating live connection to reactjs app
 app.get("*", function(req, res) {

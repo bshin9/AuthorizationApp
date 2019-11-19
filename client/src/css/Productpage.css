@@ -54,9 +54,16 @@ img {
   transition: all 0.4s ease-in-out;
 }
 
-#products .item-img .img-overlay:hover {
-  opacity: 1;
-  z-index: 1;
+.buyBtn {
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+  color: #40C575;
+  border-color: #40C575;
+}
+
+.buyBtn:hover {
+  background-color: #40C575;
+  color: #fff;
 }
 
 .strong {
@@ -71,7 +78,7 @@ img {
 }
 
 .card-body {
-  height: 25vh;
+  height: 30vh;
   width: 30vw;
 }
 
