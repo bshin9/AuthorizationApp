@@ -1,5 +1,5 @@
 const router = require("express").Router();
-let ContactModel = require("../models/contacts_model");
+let ContactModel = require("../models/contactsmodel");
 
 router.get("/", async (req, res) => {
   try {

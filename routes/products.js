@@ -1,5 +1,5 @@
 const router = require("express").Router();
-let ProductModel = require("../models/products_model");
+let ProductModel = require("../models/productsmodel");
 
 // /players endpoint gets us all player information
 router.get("/", async (req, res) => {
