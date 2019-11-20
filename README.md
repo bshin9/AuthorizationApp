@@ -10,6 +10,10 @@ This project is done in React and the front end is entirely based off of React c
 
 The back end of the project was done using Node JS, mySql, and then linking these together to the frontend. This was utilized heavily throughout this project and it allowed for us to easily post our product data along with our customer data to the frontend. 
 
+## ERD 
+
+<img width="1440" alt="Screen Shot 2019-11-20 at 3 10 10 PM" src="https://user-images.githubusercontent.com/52217063/69274207-e228f380-0ba7-11ea-851b-5f73e98351ba.png">
+
 ## USAGE
 
 Make sure to clone this repo in the directory of your choosing
