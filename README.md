@@ -1,14 +1,16 @@
-# REACT-ECOMMERCE APP
+# AUTHENTICATION APP
 
-This is my Ecommerce App on Proper Watch. I wanted to create a website that mirros off of Conor McGregor's Proper Whiskey business. Throughout the website, you will see classical watches that range from a wide variety of style as well as price range. I wanted to pay homage to McGregor's homeland, Ireland. The website is full of Irish pride and represents their colors in a sleek design. 
+Created an authentication app using a cloned repo of our e-commerce application. I created a sign up and login. Then I authenticated my app by creating the ability of the computer so it is able to transfer tokens which is a form of identification. These tokens hide the user's password in order to make our app secure. After the user signs in, they are able to view the protected page.
 
-## REACT
+## Languages Utilized
 
-This project is done in React and the front end is entirely based off of React components. We used this because we replaced our full static e-commerce page and converted it into React. This allowed us to sync our backend databases with our frontend which means that we no longer needed to use JS for the filtering of products.
+* React
+* MongoDB
+* NodeJS
 
-## NODE JS
+## ERD 
 
-The back end of the project was done using Node JS, mySql, and then linking these together to the frontend. This was utilized heavily throughout this project and it allowed for us to easily post our product data along with our customer data to the frontend. 
+<img width="1440" alt="Screen Shot 2019-11-20 at 3 10 10 PM" src="https://user-images.githubusercontent.com/52217063/69274207-e228f380-0ba7-11ea-851b-5f73e98351ba.png">
 
 ## USAGE
 
