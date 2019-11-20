@@ -1,6 +1,6 @@
 # AUTHENTICATION APP
 
-Created an authentication app using a cloned repo of our e-commerce application. I created a sign up and login. Then I authenticated my app by creating the ability of the computer so it is able to transfer tokens which is a form of identification. These tokens hide the user's password in order to make our app secure. After the user signs in, they are able to view the protected page.
+Created an authentication app using a cloned repo of our e-commerce application. I created a sign up and login. Then I created tokens that are used by the computer because it is the way the machines communicate. These tokens hide the user's password in order to make our app secure. After the user signs in, they are able to view the protected page.
 
 ## Languages Utilized
 
