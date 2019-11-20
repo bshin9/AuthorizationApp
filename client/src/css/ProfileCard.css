@@ -1,0 +1,9 @@
+img.card-img-top {
+  height: 350px;
+  width: 400px;
+  object-fit: contain;
+}
+
+.card.products {
+  padding-bottom: 0;
+}

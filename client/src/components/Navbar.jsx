@@ -7,7 +7,7 @@ const Navbar = props => {
   return (
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
       <div className="container">
-        <NavLink className="navbar-brand" to="/home">
+        <NavLink className="navbar-brand" to="/">
           Proper Watch
         </NavLink>
         <button

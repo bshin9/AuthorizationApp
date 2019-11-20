@@ -23,6 +23,7 @@ import "./css/Footer.css";
 import "./css/Video.css";
 import "./css/SignUp.css";
 import "./css/EditComment.css";
+import "./css/ProfileCard.css";
 
 // Using the router to route the Home, Product, and Contact pages together
 // Calling the Navbar and Footer so we don't have to repeat in the other pages
@@ -44,6 +45,7 @@ class App extends React.Component {
     return (
       <Router>
         <Navbar currentUser={currentUser} />
+        <Route path="/" exact component={Home} />
         <Route path="/home" exact component={Home} />
         <Route path="/products" exact component={Product} />
         <Route path="/contact" exact component={Contact} />

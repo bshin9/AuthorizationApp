@@ -7,8 +7,7 @@ const Card = ({ name, price, image, description }) => {
             <div className="card-row">
               <div className="card-container">
                 <div className="item-img">
-                  <a href="#a"><img src={image} className="" alt="properwatches" /></a>
-                  <div className="img-overlay" />
+                  <img src={image} className="" alt="properwatches" />
                 </div>
                 <div className="card-body">
                   <h2 className="strong">{name} ${price}</h2>
