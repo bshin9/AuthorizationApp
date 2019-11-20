@@ -7,6 +7,8 @@ Created an authentication app using a cloned repo of our e-commerce application.
 * React
 * MongoDB
 * NodeJS
+* MongoDB Atlas
+* Bcrypt
 
 ## ERD 
 
