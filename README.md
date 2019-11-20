@@ -36,4 +36,4 @@ Please make sure to update tests as appropriate.
 This was created by Brian Shin.
 
 ## License
-[MIT](http://www.tldrlegal.com/license/mit-license)
+[MIT](https://github.com/bshin9/AuthorizationApp/blob/master/LICENSE)
