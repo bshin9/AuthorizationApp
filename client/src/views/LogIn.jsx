@@ -31,7 +31,7 @@ class LogIn extends React.Component {
     return (
       <section id="LogIn">
         <div className="container">
-          <div className="row">
+          <div className="row login">
             <div className="col-md-6 mx-auto">
               <div className="card">
                 <div className="card-header">

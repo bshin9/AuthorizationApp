@@ -37,3 +37,11 @@
   margin: 2rem 0 2rem 0;
   padding: 0 0 4rem 0;
 }
+
+.row.login{
+  min-height: 75vh;
+}
+
+.form-content.signup {
+  min-height: 60vh;
+}
