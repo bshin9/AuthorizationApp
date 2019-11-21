@@ -35,31 +35,36 @@ const Navbar = props => {
                 CONTACTS
               </NavLink>
             </li>
+
             {props.currentUser ? (
               <span>
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/profile">
-                    Profile
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/logout">
-                    Log Out
-                  </NavLink>
-                </li>
+                <ul className="navbar-nav ml-auto">
+                  <li className="nav-item">
+                    <NavLink className="nav-link" to="/profile">
+                      Profile
+                    </NavLink>
+                  </li>
+                  <li className="nav-item">
+                    <NavLink className="nav-link" to="/logout">
+                      Log Out
+                    </NavLink>
+                  </li>
+                </ul>
               </span>
             ) : (
               <span>
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/login">
-                    Log In
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/signup">
-                    Sign Up
-                  </NavLink>
-                </li>
+                <ul className="navbar-nav ml-auto">
+                  <li className="nav-item">
+                    <NavLink className="nav-link" to="/signup">
+                      Sign Up
+                    </NavLink>
+                  </li>
+                  <li className="nav-item">
+                    <NavLink className="nav-link" to="/login">
+                      Log In
+                    </NavLink>
+                  </li>
+                </ul>
               </span>
             )}
           </ul>
