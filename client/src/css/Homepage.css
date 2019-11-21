@@ -98,3 +98,13 @@ body {
 #customers .carousel-indicators {
   margin-bottom: -50px;
 }
+
+.fas.fa-crown {
+  color: gold;
+}
+.fas.fa-money-bill {
+  color: green;
+}
+.fas.fa-chart-line {
+  color: #99badd;
+}

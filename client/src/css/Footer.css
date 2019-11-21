@@ -1,10 +1,10 @@
 footer {
-  background-color: blanchedalmond;
+  background-color: #013220;
 }
 
 footer a {
   filter: brightness(0.8);
-  color: #40c575;
+  color: white;
 }
 
 footer a:hover {
@@ -13,4 +13,8 @@ footer a:hover {
 
 footer .fa {
   padding: 0 3px;
+}
+
+.footer-copyright {
+  color: white;
 }
