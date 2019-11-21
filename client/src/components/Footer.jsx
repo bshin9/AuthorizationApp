@@ -11,6 +11,7 @@ const Footer = () => {
               href="https://www.facebook.com/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-hidden="true"
             >
               <i className="fab fa-facebook fa-2x" />
             </a>
@@ -20,6 +21,7 @@ const Footer = () => {
               href="https://www.twitter.com"
               target="_blank"
               rel="noopener noreferrer"
+              aria-hidden="true"
             >
               <i className="fab fa-twitter fa-2x" />
             </a>
@@ -29,6 +31,7 @@ const Footer = () => {
               href="https://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
+              aria-hidden="true"
             >
               <i className="fab fa-instagram fa-2x" />
             </a>
@@ -38,6 +41,7 @@ const Footer = () => {
               href="https://www.pinterest.com"
               target="_blank"
               rel="noopener noreferrer"
+              aria-hidden="true"
             >
               <i className="fab fa-pinterest fa-2x" />
             </a>
@@ -47,6 +51,7 @@ const Footer = () => {
               href="https://aboutme.google.com/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-hidden="true"
             >
               <i className="fab fa-google-plus fa-2x" />
             </a>

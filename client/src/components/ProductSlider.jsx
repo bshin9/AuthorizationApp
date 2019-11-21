@@ -31,7 +31,7 @@ const ProductSlider = () => {
                       className="watchSlide"
                       alt="rolex"
                     />
-                    <div className="blockquote-footer" id="slider">
+                    <div className="blockquote-footer">
                       Conor McGregor loves this edition of the rolex
                     </div>
                     <p>
@@ -53,7 +53,7 @@ const ProductSlider = () => {
                       className="watchSlide"
                       alt="rolex5k"
                     />
-                    <div className="blockquote-footer" id="slider">
+                    <div className="blockquote-footer">
                       Floyd Mayweather proudly wears this rolex
                     </div>
                     <p>
@@ -74,7 +74,7 @@ const ProductSlider = () => {
                       className="watchSlide"
                       alt="versace"
                     />
-                    <div className="blockquote-footer" id="slider">
+                    <div className="blockquote-footer">
                       Post Malone adores this collection of Versace
                     </div>
                     <p>

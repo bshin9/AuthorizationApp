@@ -46,8 +46,8 @@ class LogIn extends React.Component {
                       <label htmlFor="email">Email</label>
                       <input
                         type="text"
-                        placeholder="Email"
                         name="email"
+                        id="email"
                         defaultValue={email}
                         className="form-control"
                       />
@@ -56,8 +56,8 @@ class LogIn extends React.Component {
                       <label htmlFor="password">Password</label>
                       <input
                         type="password"
-                        placeholder="Password"
                         name="password"
+                        id="password"
                         defaultValue={password}
                         className="form-control"
                       />

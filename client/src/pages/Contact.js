@@ -118,137 +118,136 @@ class Contact extends React.Component {
   render() {
     return (
       <div className="Contactpage">
-      {/* HEADER */}
-      <header id="contactHeader">
+        {/* HEADER */}
+        <header id="contactHeader">
           <div className="container">
             <div className="row">
-              <div className="col-md-6 m-auto text-center">
-              </div>
+              <div className="col-md-6 m-auto text-center"></div>
             </div>
           </div>
         </header>
-      <section id="contact" className="py-3">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-md-4">
-              <div className="card p-4">
-                <h4>Get In Touch</h4>
-                <p>
-                  We are more than happy to assist you at your convenience! 
-                </p>
-                <h4>Address</h4>
-                <p>36 Hillcrest St. Ontario, CA 91761</p>
-                <h4>Email</h4>
-                <p>propermail@hotmail.com</p>
-                <h4>Phone</h4>
-                <p>(310)-432-3444</p>
+        <section id="contact" className="py-3">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-md-4">
+                <div className="card p-4">
+                  <h4>Get In Touch</h4>
+                  <p>
+                    We are more than happy to assist you at your convenience!
+                  </p>
+                  <h4>Address</h4>
+                  <p>36 Hillcrest St. Ontario, CA 91761</p>
+                  <h4>Email</h4>
+                  <p>propermail@hotmail.com</p>
+                  <h4>Phone</h4>
+                  <p>(310)-432-3444</p>
+                </div>
               </div>
-            </div>
 
-            <div className="col-md-8">
-              <div className="card p-4">
-                <h3 className="text-center">
-                  If you have any questions we are here for you!
-                </h3>
-                <hr />
-                <form className="form" onSubmit={this.handleSubmit}>
-                  <div className="row">
-                    <div className="col-md-6">
-                      <fieldset className="form-group">
-                        <input
-                          type="text"
-                          className="form-control"
-                          placeholder="First Name"
-                          id="firstname"
-                          value={this.state.firstname}
-                          onChange={this.updateFirstname}
-                        />
-                        <div style={{ fontSize: 12, color: "#FF7900" }}>
-                          {this.state.firstnameError}
-                        </div>
-                      </fieldset>
-                    </div>
-                    <div className="col-md-6">
-                      <fieldset className="form-group">
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="lastname"
-                          placeholder="Last Name"
-                          value={this.state.lastname}
-                          onChange={this.updateLastname}
-                        />
-                        <div style={{ fontSize: 12, color: "#FF7900" }}>
-                          {this.state.lastnameError}
-                        </div>
-                      </fieldset>
-                    </div>
-                    <div className="col-md-6">
-                      <fieldset className="form-group">
-                        <input
-                          type="email"
-                          className="form-control"
-                          placeholder="Email"
-                          id="email"
-                          value={this.state.email}
-                          onChange={this.updateEmail}
-                        />
-                        <div style={{ fontSize: 12, color: "#FF7900" }}>
-                          {this.state.emailError}
-                        </div>
-                      </fieldset>
-                    </div>
-                    <div className="col-md-6">
-                      <fieldset className="form-group">
-                        <input
-                          type="text"
-                          className="form-control"
-                          placeholder="Username"
-                          id="user_name"
-                          value={this.state.user_name}
-                          onChange={this.updateUsername}
-                        />
-                        <div style={{ fontSize: 12, color: "#FF7900" }}>
-                          {this.state.usernameError}
-                        </div>
-                      </fieldset>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-md-12">
-                      <fieldset className="form-group">
-                        <textarea
-                          className="form-control"
-                          placeholder="Message"
-                          id="message"
-                          value={this.state.message}
-                          onChange={this.updateMessage}
-                        />
-                        <div style={{ fontSize: 12, color: "#FF7900" }}>
-                          {this.state.messageError}
-                        </div>
-                      </fieldset>
-                    </div>
-                    <div className="col-md-12">
-                      <div className="form-group">
-                        <input
-                          onSubmit={this.handleSubmit}
-                          type="submit"
-                          value="Submit"
-                          className="btn btn-outline-info btn-block"
-                          id="btn"
-                        />
+              <div className="col-md-8">
+                <div className="card p-4">
+                  <h3 className="text-center">
+                    If you have any questions we are here for you!
+                  </h3>
+                  <hr />
+                  <form className="form" onSubmit={this.handleSubmit}>
+                    <div className="row">
+                      <div className="col-md-6">
+                        <fieldset className="form-group">
+                          <label htmlFor="firstname">First Name</label>
+                          <input
+                            type="text"
+                            className="form-control"
+                            id="firstname"
+                            value={this.state.firstname}
+                            onChange={this.updateFirstname}
+                          />
+                          <div style={{ fontSize: 12, color: "#FF7900" }}>
+                            {this.state.firstnameError}
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div className="col-md-6">
+                        <fieldset className="form-group">
+                          <label htmlFor="lastname">Last Name</label>
+                          <input
+                            type="text"
+                            className="form-control"
+                            id="lastname"
+                            value={this.state.lastname}
+                            onChange={this.updateLastname}
+                          />
+                          <div style={{ fontSize: 12, color: "#FF7900" }}>
+                            {this.state.lastnameError}
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div className="col-md-6">
+                        <fieldset className="form-group">
+                          <label htmlFor="email">Email</label>
+                          <input
+                            type="email"
+                            className="form-control"
+                            id="email"
+                            value={this.state.email}
+                            onChange={this.updateEmail}
+                          />
+                          <div style={{ fontSize: 12, color: "#FF7900" }}>
+                            {this.state.emailError}
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div className="col-md-6">
+                        <fieldset className="form-group">
+                          <label htmlFor="user_name">Username</label>
+                          <input
+                            type="text"
+                            className="form-control"
+                            id="user_name"
+                            value={this.state.user_name}
+                            onChange={this.updateUsername}
+                          />
+                          <div style={{ fontSize: 12, color: "#FF7900" }}>
+                            {this.state.usernameError}
+                          </div>
+                        </fieldset>
                       </div>
                     </div>
-                  </div>
-                </form>
+                    <div className="row">
+                      <div className="col-md-12">
+                        <fieldset className="form-group">
+                          <label htmlFor="message">Message</label>
+                          <textarea
+                            className="form-control"
+                            id="message"
+                            value={this.state.message}
+                            onChange={this.updateMessage}
+                          />
+                          <div style={{ fontSize: 12, color: "#FF7900" }}>
+                            {this.state.messageError}
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div className="col-md-12">
+                        <div className="form-group">
+                          <input
+                            onSubmit={this.handleSubmit}
+                            type="submit"
+                            value="Submit"
+                            className="btn btn-outline-info btn-block"
+                            id="btn"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
               </div>
+              {/* Calling the CommentBox here to retrieve the data from it */}
+              <CommentBox />
             </div>
-            {/* Calling the CommentBox here to retrieve the data from it */}
-            <CommentBox />
           </div>
-        </div>
-      </section>
+        </section>
       </div>
     );
   }
