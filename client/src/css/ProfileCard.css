@@ -7,3 +7,11 @@ img.card-img-top {
 .card.products {
   padding-bottom: 0;
 }
+
+img.d-block {
+  margin-bottom: 0;
+}
+
+.col-md-3 {
+  padding-bottom: 0;
+}

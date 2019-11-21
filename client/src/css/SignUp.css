@@ -22,9 +22,6 @@
   border: 1px solid #ced4da;
   margin-bottom: 2%;
 }
-.form-control {
-  border-radius: 1.5rem;
-}
 .btnSubmit {
   transition: all 0.3s ease-in-out;
   background-color: #fff;
