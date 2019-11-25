@@ -35,7 +35,6 @@ const Navbar = props => {
                 CONTACTS
               </NavLink>
             </li>
-
             {props.currentUser ? (
               <span>
                 <ul className="navbar-nav ml-auto">

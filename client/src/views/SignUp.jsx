@@ -68,7 +68,7 @@ class SignUp extends React.Component {
                 </div>
                 <div className="col-md-6">
                   <div className="form-group">
-                  <label htmlFor="password">Passowrd</label>
+                  <label htmlFor="password">Password</label>
                     <input
                       onChange={this.onInputChange.bind(this)}
                       type="password"
